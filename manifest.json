@@ -1,20 +1,27 @@
-  {
-    "name": "Yamusic Export Playlist",
-    "version": "0.1",
-    "description": "Exports playlists",
-    
-    "background": {
-    "persistent": false,
-    "scripts": ["background.js"]
-  },
- "content_scripts": [{
-    "matches": ["*://yandex.music.ru/*"],
-    "js": ["content.js"]
-  }],
-  "browser_action": {
-    "default_title": "Export"
-  },
-  "permissions": ["activeTab", "https://music.yandex.ru/*"],
-    "manifest_version": 2
-  }
+{
+	"name": "Yamusic Export Playlist",
+	"version": "0.1",
+	"description": "Exports playlists",
+	"background": {
+		"persistent": false,
+		"scripts": [
+			"background.js"
+		]
+	},
+	"browser_action": {
+		"default_title": "Export"
+	},
+	"permissions": [
+		"activeTab",
+		"https://music.yandex.ru/*"
+	],
+	"icons": {
+		"16": "icon16.png",
+		"19": "icon19.png",
+		"38": "icon38.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"manifest_version": 2
+}
   
